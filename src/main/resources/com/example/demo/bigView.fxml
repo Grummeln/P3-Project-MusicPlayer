@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="bigPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UpscalePage">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="613.0">
+         <image>
+            <Image url="@3McafD.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="shrinkButton" blendMode="EXCLUSION" layoutX="19.0" layoutY="429.0" mnemonicParsing="false" onAction="#switchToRadio" prefHeight="26.0" prefWidth="78.0" text="Tiny" />
+      <Button fx:id="dislike" layoutX="519.0" layoutY="429.0" mnemonicParsing="false" onAction="#disliked" text="👎" />
+      <ProgressBar fx:id="progressBarv2" layoutX="105.0" layoutY="433.0" prefHeight="18.0" prefWidth="410.0" progress="0.0" />
+      <TableView fx:id="songsList" layoutX="9.0" layoutY="14.0" prefHeight="406.0" prefWidth="587.0">
+        <columns>
+          <TableColumn fx:id="songName" prefWidth="185.59994220733643" text="Name" />
+          <TableColumn fx:id="artistName" minWidth="0.0" prefWidth="187.2000274658203" text="Artist" />
+            <TableColumn fx:id="albumName" minWidth="0.0" prefWidth="152.79998779296875" text="Album" />
+            <TableColumn fx:id="idSong" minWidth="0.0" prefWidth="59.999987792968795" text="ID" />
+        </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Button fx:id="like" layoutX="547.0" layoutY="429.0" mnemonicParsing="false" onAction="#liked" text="like" />
+   </children>
+</AnchorPane>
